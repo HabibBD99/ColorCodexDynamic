@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+
+</title>
+
+<style type="text/css">
+
+
+</style>
+
+
+<script type="text/javascript">
+
+var btn =[
+
+   "Green",
+   "Red",
+   "Blue",
+   "Yellow"
+
+  ];
+ 
+  
+
+</script>
+
+</head>
+<body id="Bdy">
+  <h3>Enter Your Button Press</h3>
+  
+  
+  <div onclick="HB()">
+  
+  
+  <button id="Btn" value="Green">
+  <script>document.write(btn[0]);</script>
+  </button>
+  
+  
+  
+  <button id="Btn" value="Red">
+  <script>document.write(btn[1]);</script>
+  </button>
+  
+  
+  
+  <button id="Btn" value="Blue">
+  <script>document.write(btn[2]);</script>
+  </button>
+  
+  
+  
+  <button id="Btn" value="Yellow">
+  <script>document.write(btn[3]);</script>
+  </button>
+  
+  
+  <script type="text/javascript">
+  
+  
+  
+
+	   
+	   
+         for(var i=0; i< 4; i++){
+
+   document.querySelectorAll("#Btn")[i].addEventListener("click", function(){
+
+    var textButton = this.value;
+    
+    document.querySelector("h3").innerHTML = textButton + " Button is Clicked";
+    
+      var ColorBody = document.getElementById("Bdy");
+          ColorBody.style.backgroundColor=textButton;   
+   
+   
+   
+            });
+
+
+     }
+
+ 
+
+ 
+  </script>
+  
+  
+  
+ </div>
+  
+  
+  
+</body>
+</html>
